@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatSaberIPAProjectTemplate", "BeatSaberIPAProjectTemplate\BeatSaberIPAProjectTemplate.csproj", "{B05DB604-EE25-45C3-9239-FD083AA0DF91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateWizard", "TemplateWizard\TemplateWizard.csproj", "{5AB85D77-10F5-49C3-B3DA-820E1B3E8526}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B05DB604-EE25-45C3-9239-FD083AA0DF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05DB604-EE25-45C3-9239-FD083AA0DF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B05DB604-EE25-45C3-9239-FD083AA0DF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB85D77-10F5-49C3-B3DA-820E1B3E8526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB85D77-10F5-49C3-B3DA-820E1B3E8526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB85D77-10F5-49C3-B3DA-820E1B3E8526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB85D77-10F5-49C3-B3DA-820E1B3E8526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
