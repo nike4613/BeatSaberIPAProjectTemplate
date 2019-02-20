@@ -13,18 +13,21 @@ namespace $safeprojectname$
 
         public ModsaberModInfo ModInfo => null;
 
-        internal static Config config;
+        internal static Ref<Config> config;
         internal static IConfigProvider configProvider;
 
-        public void Init(IPALogger logger, IConfigProvider cfgProvider)
+        public void Init(IPALogger logger, [Config.Prefer("json")] IConfigProvider cfgProvider)
         {
             Logger.log = logger;
             configProvider = cfgProvider;
 
-            config = cfgProvider.Parse<Config>();
-            if (config.RegenerateConfig)
-                cfgProvider.Store(config = new Config() { RegenerateConfig = false });
-        }
+            config = cfgProvider.MakeLink<Config>((p, v) =>
+            {
+                if (v.Value == null || v.Value.RegenerateConfig)
+                    p.Store(v.Value = new PluginConfig() { RegenerateConfig = false });
+                config = v;
+            });
+    }
 
         public void OnApplicationStart()
         {
