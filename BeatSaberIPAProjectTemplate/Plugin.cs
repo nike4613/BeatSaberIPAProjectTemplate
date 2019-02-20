@@ -1,5 +1,6 @@
 ﻿using IPA;
 using IPA.Config;
+using IPA.Utilities;
 using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
@@ -7,7 +8,7 @@ namespace $safeprojectname$
 {
     public class Plugin : IBeatSaberPlugin
     {
-        internal static Ref<Config> config;
+        internal static Ref<PluginConfig> config;
         internal static IConfigProvider configProvider;
 
         public void Init(IPALogger logger, [Config.Prefer("json")] IConfigProvider cfgProvider)
@@ -15,7 +16,7 @@ namespace $safeprojectname$
             Logger.log = logger;
             configProvider = cfgProvider;
 
-            config = cfgProvider.MakeLink<Config>((p, v) =>
+            config = cfgProvider.MakeLink<PluginConfig>((p, v) =>
             {
                 if (v.Value == null || v.Value.RegenerateConfig)
                     p.Store(v.Value = new PluginConfig() { RegenerateConfig = false });

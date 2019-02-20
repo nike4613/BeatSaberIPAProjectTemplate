@@ -64,7 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Config.cs" />
+    <None Include="PluginConfig.cs" />
     <None Include="Logger.cs" />
     <None Include="manifest.json" />
     <None Include="Plugin.cs" />

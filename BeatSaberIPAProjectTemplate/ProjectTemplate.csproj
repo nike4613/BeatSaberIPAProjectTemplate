@@ -47,7 +47,7 @@
 	<ItemGroup>
 		<Compile Include="Plugin.cs" />
     <Compile Include="Logger.cs" />
-    <Compile Include="Config.cs" />
+    <Compile Include="PluginConfig.cs" />
 
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>

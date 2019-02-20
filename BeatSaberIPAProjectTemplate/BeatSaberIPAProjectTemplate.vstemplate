@@ -17,7 +17,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">manifest.json</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Plugin.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Config.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">PluginConfig.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true">Logger.cs</ProjectItem>
     </Project>
   </TemplateContent>

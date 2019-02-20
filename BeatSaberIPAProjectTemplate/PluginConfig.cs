@@ -1,7 +1,7 @@
 ﻿namespace $safeprojectname$
 {
-    internal class Config
-    {
+    internal class PluginConfig
+{
         public bool RegenerateConfig = true;
     }
 }
