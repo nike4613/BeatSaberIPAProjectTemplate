@@ -7,12 +7,6 @@ namespace $safeprojectname$
 {
     public class Plugin : IBeatSaberPlugin
     {
-        public string Name => "$projectname$";
-
-        public string Version => "0.0.1-alpha";
-
-        public ModsaberModInfo ModInfo => null;
-
         internal static Ref<Config> config;
         internal static IConfigProvider configProvider;
 

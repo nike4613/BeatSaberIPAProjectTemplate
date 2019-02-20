@@ -66,6 +66,7 @@
   <ItemGroup>
     <None Include="Config.cs" />
     <None Include="Logger.cs" />
+    <None Include="manifest.json" />
     <None Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
